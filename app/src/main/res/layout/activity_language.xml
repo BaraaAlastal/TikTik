@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".Ui.LanguageActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center"
+        android:text="إختر اللغة المفضلة"
+        android:textColor="#707070"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_60sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="249dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:gravity="center"
+        android:lines="2"
+        android:text="Choose \nYour Language"
+        android:textColor="#000000"
+        android:textSize="33dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:paddingHorizontal="@dimen/_5sdp"
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+
+        <LinearLayout
+            android:id="@+id/EN_Lay"
+            android:background="@drawable/en_ar_selec"
+            android:padding="@dimen/_7sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_5sdp">
+            <TextView
+                android:id="@+id/tv_eng"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="English"/>
+            <TextView
+                android:id="@+id/tv_welcome"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="Wellcome"
+                android:textSize="@dimen/_13sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/AR_Ly"
+            android:padding="@dimen/_7sdp"
+            android:background="@drawable/en_ar_selec"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_arabic"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="عربي"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_gravity="end"/>
+            <TextView
+                android:id="@+id/tv_marhab_arabic"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="مرحبا بك"
+                android:layout_gravity="end"
+                android:textSize="@dimen/_13sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!--<Button-->
+            <!--android:id="@+id/button"-->
+            <!--android:layout_width="162dp"-->
+            <!--android:layout_height="119dp"-->
+            <!--android:layout_marginStart="20dp"-->
+            <!--android:layout_marginEnd="11dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@drawable/english_btn"-->
+            <!--tools:ignore="RtlCompat" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/button2"-->
+            <!--android:layout_width="162dp"-->
+            <!--android:layout_height="119dp"-->
+            <!--android:layout_marginEnd="20dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@drawable/arabic_btn"-->
+            <!--tools:ignore="RtlCompat" />-->
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/next_btn_lang_act"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="92.5dp"
+        android:background="@drawable/round_btn"
+        android:src="@drawable/next_icon_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear"
+        app:layout_constraintVertical_bias="0.051" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

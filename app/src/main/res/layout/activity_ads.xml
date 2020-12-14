@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Ui.AdsActivity">
+
+
+    <Button
+        android:id="@+id/skip_btn"
+        android:layout_width="60dp"
+        android:layout_height="@dimen/_20sdp"
+        android:background="@drawable/shape_btn_skip"
+        android:text="Skip"
+        android:layout_margin="@dimen/_15sdp"
+        android:layout_gravity="end"
+        android:textColor="#fff"
+        tools:layout_editor_absoluteX="319dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/tv_shop_now"
+        android:layout_width="183dp"
+        android:layout_height="67dp"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="SHOP NOW \nTIKTIK"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        tools:layout_editor_absoluteX="114dp"
+        tools:layout_editor_absoluteY="45dp"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager_ads_activity"
+        android:layout_width="387dp"
+        android:layout_height="400dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="8dp"
+        ></androidx.viewpager.widget.ViewPager>
+
+    <ImageButton
+        android:id="@+id/next_btn_ads_act"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/round_btn"
+        android:src="@drawable/next_icon_btn"
+        android:layout_gravity="center|bottom"
+        android:layout_marginTop="@dimen/_60sdp"
+         />
+</LinearLayout>

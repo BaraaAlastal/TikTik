@@ -1,0 +1,31 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#EC1514</item>
+        <item name="colorPrimaryDark">#EC1514</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <style name="SignInStyleActivity" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor">#E4E4E4</item>
+        <item name="android:isLightTheme">true</item>
+    </style>
+    <style name="SplashStyleActivity" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor">#EC1514</item>
+        <item name="android:isLightTheme">true</item>
+    </style>
+    <style name="LanguageStyleActivity" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor">#BDBDBD</item>
+        <item name="android:isLightTheme">true</item>
+    </style>
+    <style name="HomeActivity" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+
+
+</resources>
